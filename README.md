@@ -5,4 +5,6 @@ A lot of this code is the same, but I've implemented a new RNG method that I tho
 
 
 I implemented XORShift32 to generate random numbers REALLY fast, and that closed the gap from about 9 seconds to barely less than a tenth of a second (on my machine.)  
-Note: This can only be run on machines with an nvidia graphics card.
+Note: This can only be run on machines with an nvidia graphics card.  
+  
+You'll notice 2 .cu files. The Plus accidentally ran at 100 million, not 1 billion. The CudaNoCurand is the same file, but the amount is set correctly.
