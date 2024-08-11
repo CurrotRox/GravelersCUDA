@@ -11,6 +11,7 @@ __device__ unsigned int xorshift32(unsigned int* state) {
     x ^= x << 13;
     x ^= x >> 17;
     x ^= x << 5;
+    x ^= clock()%20; //This is to introduce more randomness into the xorshift. This (to me) has stopped random 231 successes from appearing
     *state = x;
     return x;
 }
