@@ -18,3 +18,5 @@ I was double checking everything, and came across a couple bugs.
 1. Every compilation of the .cu resulted in a different result, but it was static for the .exe
 2. Every now and again, the program would spit out a 231 max, which is way more often than it should (it really shouldn't, ever)
    So I added the clock to the seed, twice. Once in the kernel (the main body of work the program does), and once in my xorshift32 implementation. This introduced extra randomness and keeps everything running fast, and randomly.
+   ![image](https://github.com/user-attachments/assets/e0adc2f6-1982-4832-b0f3-014a95da6cf7)
+
