@@ -11,7 +11,7 @@ Note: This can only be run on machines with an nvidia graphics card.
 
 Edit Stuff:  
 As I've made progress, I've come back and edited my readme and my files.  
-Each version of my code is in it's own code, along with everything the compiler gave me. I included it for the sake of being transparent.  
+Each version of my code is in it's own folder, along with everything the compiler gave me. I included it for the sake of being transparent.  
   
 Second Ver Edit:  
 I was double checking everything, and came across a couple bugs.  
