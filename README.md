@@ -20,3 +20,9 @@ I was double checking everything, and came across a couple bugs.
    So I added the clock to the seed, twice. Once in the kernel (the main body of work the program does), and once in my xorshift32 implementation. This introduced extra randomness and keeps everything running fast, and randomly.
    ![image](https://github.com/user-attachments/assets/e0adc2f6-1982-4832-b0f3-014a95da6cf7)
 
+Further edit:  
+I've updated the code to now record and print the time locally instead of using the windows' Measure-Command to do it, eliminating 1. any windows overhead, and 2. any measure-command overhead.  
+I've also set it up into loops on the recommendation of someone else, and while I didn't notice any performance increase, it doesn't hurt me any to have it, so I've left it in.  
+The code before and after the loops is still uploaded to be examined.  
+Here's some output from my code:  
+![image](https://github.com/user-attachments/assets/d087fbff-3729-47f6-84de-baeee8815e3f)
