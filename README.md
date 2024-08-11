@@ -4,3 +4,4 @@ A lot of this code is the same, but I've implemented a new RNG method that I tho
 ![image](https://github.com/user-attachments/assets/b5f70771-b677-4215-b66a-470237ebd627)
 
 I implemented XORShift32 to generate random numbers REALLY fast, and that closed the gap from about 9 seconds to barely less than a tenth of a second (on my machine.)  
+Note: This can only be run on machines with an nvidia graphics card.
