@@ -1,7 +1,7 @@
 #include <curand_kernel.h>
 #include <stdio.h>
 
-#define N 10000000  // Number of roll instances
+#define N 1000000000  // Number of roll instances
 #define ROLLS 231  // Number of rolls per instance
 
 
@@ -21,19 +21,15 @@ __global__ void rollAndFindMaxKernel(int* maxResult, int* d_numberOfIterations, 
     
     if (idx < N) {
         unsigned int state = seed ^ clock() + (idx + 1);
-        for (int j=0;j<100;j++){
-            //Init xorshift
-
-            int count = 0;
-            for (int i = 0; i < ROLLS; i++) {
-                int roll = xorshift32(&state) % 4;  // Generate a random number between 0 and 3
-                if (roll == 0) count++;  // Increment if the roll is zero
+        //Init xorshift
+        int count = 0;
+        for (int i = 0; i < ROLLS; i++) {
+            int roll = xorshift32(&state) % 4;  // Generate a random number between 0 and 3
+               if (roll == 0) count++;  // Increment if the roll is zero
             }
-
-            // Use atomic operation to update the maximum result, and iteration count
-            atomicMax(maxResult, count);
-            atomicAdd(d_numberOfIterations, 1);
-        }
+        // Use atomic operation to update the maximum result, and iteration count
+        atomicMax(maxResult, count);
+        atomicAdd(d_numberOfIterations, 1);
     }
 }
 
