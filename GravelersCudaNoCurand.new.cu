@@ -20,7 +20,7 @@ __global__ void rollAndFindMaxKernel(int* maxResult, int* d_numberOfIterations, 
 
     if (idx < N) {
         //Init xorshift
-        unsigned int state = seed ^ (idx + 1);
+        unsigned int state = seed ^ clock() + (idx + 1);
 
         int count = 0;
         for (int i = 0; i < ROLLS; i++) {
