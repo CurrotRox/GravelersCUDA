@@ -29,3 +29,9 @@ I've also set it up into loops on the recommendation of someone else, and while 
 The code before and after the loops is still uploaded to be examined.  
 Here's some output from my code:  
 ![image](https://github.com/user-attachments/assets/d087fbff-3729-47f6-84de-baeee8815e3f)
+
+Fourth Ver Edit:  
+Not much has been changed this time, but I've managed to squeeze out a few more ms of performance, my current best time sitting in the 133-134ms range.  
+This version has a small bug, where if I run too many threads, 231's start popping up, but with the implementation of loops, it doesn't happen.  
+I've also tried moving around where the CUDA events are, at the beginning and end of as much of the program as possible, and the execution time is about the same, so I left it as is.  
+![image](https://github.com/user-attachments/assets/8047863f-1e36-4c14-b62f-ea58697d3a6d)
