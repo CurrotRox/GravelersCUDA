@@ -18,8 +18,8 @@ __global__ void rollAndFindMaxKernel(int* maxResult, int* d_numberOfIterations, 
                 state ^= state << 13;
                 state ^= state >> 17;
                 state ^= state << 5;
-                
-                if (state % 4 == 0) count++;  //If state%4 == 0 (Meaning it's a multiple of 4), add 1 to the count
+                //Now the actual counting looks like this
+                if (state % 4 == 0) count++;
             }
 
             // Use atomic operation to update the maximum result, and iteration count
