@@ -47,4 +47,5 @@ At this point I have some kind of problem. Anyway, special shoutout to DasMonito
 
 Sixth Ver v2 Edit:
 I didn't do too much here, I just did some small optimizations, but the results speak for themselves.  
-![image](https://github.com/user-attachments/assets/e08c8ba4-f17e-4361-a1c0-e72d9b210eec)
+![image](https://github.com/user-attachments/assets/c6d1d8a4-539c-486e-a91e-e3155a890efa)
+
