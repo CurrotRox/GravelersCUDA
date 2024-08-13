@@ -46,7 +46,7 @@ At this point I have some kind of problem. Anyway, special shoutout to DasMonito
 ![image](https://github.com/user-attachments/assets/ca9483fc-b2fb-4fc2-9291-1b595100a0b9)  
 
 Sixth Ver v2 Edit:
-Changed something, and it WAS a few ms faster, but it was higher than average. So I added a bit more randomness and it's essentially back to how it was.  
+I edited the amount of times I had to call the synchronous add and max, but doing that broke something, causing my found amount of ones to be higher than average. So I added a bit more randomness to my xorshift32 algorithm and it's essentially back to how it was.  
 ![image](https://github.com/user-attachments/assets/df44f7ca-8a5d-4716-9748-ad27f89e4d63)
 
 
