@@ -34,4 +34,9 @@ Fourth Ver Edit:
 Not much has been changed this time, but I've managed to squeeze out a few more ms of performance, my current best time sitting in the 133-134ms range.  
 This version has a small bug, where if I run too many threads, 231's start popping up, but with the implementation of loops, it doesn't happen.  
 I've also tried moving around where the CUDA events are, at the beginning and end of as much of the program as possible, and the execution time is about the same, so I left it as is.  
-![image](https://github.com/user-attachments/assets/8047863f-1e36-4c14-b62f-ea58697d3a6d)
+![image](https://github.com/user-attachments/assets/8047863f-1e36-4c14-b62f-ea58697d3a6d)  
+
+Fifth Ver Edit:
+I've probably sunk too much time into this at this point, but for whatever reason optimizing this doesn't leave my mind. I've changed where xorshift lives, in order to cut down on the amount of callbacks and variables involved. The overall logic is the same, it's just more streamlined.  
+I've also added in an additional timer, so both the total computation time, and the total kernel time. On my machine, the difference between them is ~0.5ms, but I want to be transparent about what's going on. As per usual, I've left some of my runs in a screenshot below.  
+![image](https://github.com/user-attachments/assets/563c8a13-a33c-4649-9309-3ca5568b270c)
