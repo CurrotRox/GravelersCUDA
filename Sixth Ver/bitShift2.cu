@@ -39,7 +39,7 @@ __global__ void rollAndFindMaxKernel(int* maxResult, int* d_numberOfIterations, 
 
         }
         atomicMax(maxResult, maxCount);
-        //atomicAdd(d_numberOfIterations, iterations);
+        atomicAdd(d_numberOfIterations, iterations);
     }
 }
 
