@@ -46,6 +46,7 @@ At this point I have some kind of problem. Anyway, special shoutout to DasMonito
 ![image](https://github.com/user-attachments/assets/ca9483fc-b2fb-4fc2-9291-1b595100a0b9)  
 
 Sixth Ver v2 Edit:
-I didn't do too much here, I just did some small optimizations, but the results speak for themselves.  
-![image](https://github.com/user-attachments/assets/c6d1d8a4-539c-486e-a91e-e3155a890efa)
+Changed something, and it WAS a few ms faster, but it was higher than average. So I added a bit more randomness and it's essentially back to how it was.  
+![image](https://github.com/user-attachments/assets/df44f7ca-8a5d-4716-9748-ad27f89e4d63)
+
 
