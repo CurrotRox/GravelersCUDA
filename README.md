@@ -40,3 +40,7 @@ Fifth Ver Edit:
 I've probably sunk too much time into this at this point, but for whatever reason optimizing this doesn't leave my mind. I've changed where xorshift lives, in order to cut down on the amount of callbacks and variables involved. The overall logic is the same, it's just more streamlined.  
 I've also added in an additional timer, so both the total computation time, and the total kernel time. On my machine, the difference between them is ~0.5ms, but I want to be transparent about what's going on. As per usual, I've left some of my runs in a screenshot below.  
 ![image](https://github.com/user-attachments/assets/563c8a13-a33c-4649-9309-3ca5568b270c)
+
+Sixth Ver Edit:  
+At this point I have some kind of problem. Maybe I do have ADHD and am currently fixated on these poor uncountable amounts of gravelers. Anyway, special shoutout to DasMonitor on Discord for wording it in a way that it clicked for me, but this new version uses bitshifting to quickly sort through the randomly generated number. Since 2 total bits make up 4 possible numbers, each 2 bits in a random number is essentially an independant random number. Using two factors of 231, I can get 231 random numbers (I don't use 100% of the random number, but that'd take too much overhead).
+![image](https://github.com/user-attachments/assets/ca9483fc-b2fb-4fc2-9291-1b595100a0b9)  
