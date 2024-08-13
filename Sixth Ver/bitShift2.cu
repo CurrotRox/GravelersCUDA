@@ -22,6 +22,7 @@ __global__ void rollAndFindMaxKernel(int* maxResult, int* d_numberOfIterations, 
                 state ^= state << 13;
                 state ^= state >> 17;
                 state ^= state << 5;
+                state = state ^ clock64(); //This adds a bit more randomness, the numbers were higher than average, which meant something I was doing was wrong
 
                 int temp = state; //Moving the value of state to a temporary value, so I can keep using state as a good source of randomness.
                 
