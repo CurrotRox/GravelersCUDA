@@ -44,3 +44,7 @@ I've also added in an additional timer, so both the total computation time, and 
 Sixth Ver Edit:  
 At this point I have some kind of problem. Anyway, special shoutout to DasMonitor on Discord for wording it in a way that it clicked for me, but this new version uses bitshifting to quickly sort through the randomly generated number. Since 2 total bits make up 4 possible numbers, each 2 bits in a random number is essentially an independant random number. Using two factors of 231, I can get 231 random numbers (I don't use 100% of the random number, but that'd take too much overhead).  
 ![image](https://github.com/user-attachments/assets/ca9483fc-b2fb-4fc2-9291-1b595100a0b9)  
+
+Sixth Ver v2 Edit:
+I didn't do too much here, I just did some small optimizations, but the results speak for themselves.  
+![image](https://github.com/user-attachments/assets/e08c8ba4-f17e-4361-a1c0-e72d9b210eec)
