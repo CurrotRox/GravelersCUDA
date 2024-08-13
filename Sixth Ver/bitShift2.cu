@@ -33,12 +33,13 @@ __global__ void rollAndFindMaxKernel(int* maxResult, int* d_numberOfIterations, 
                 }
                 
             }
-
-            // Use atomic operation to update the maximum result, and iteration count
+            //Store current max found and iterations of the thread.
             if (count>maxCount) maxCount=count;
             iterations++;
 
         }
+
+        // Use atomic operation to update the maximum result, and iteration count
         atomicMax(maxResult, maxCount);
         atomicAdd(d_numberOfIterations, iterations);
     }
