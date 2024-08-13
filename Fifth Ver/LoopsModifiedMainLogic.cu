@@ -87,6 +87,9 @@ int main() {
     cudaFree(d_numberOfIterations);
     cudaEventDestroy(start);
     cudaEventDestroy(stop);
+    cudaEventDestroy(startKernel);
+    cudaEventDestroy(stopKernel);
 
+    
     return 0;
 }
